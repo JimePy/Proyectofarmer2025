@@ -1,0 +1,1289 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+
+
+body{
+    background-color:black;
+
+    padding: 0 auto;
+    margin: 0 auto;
+    overflow-x: hidden; /* Oculta el desbordamiento horizontal */
+}
+
+
+
+
+header {
+ background-color: #4CAF50; /* Un verde más asociado a la agricultura */
+ color: white;
+ padding: 1rem 2rem; /* Añadimos más padding lateral para que no esté pegado */
+ display: flex; /* Habilitamos Flexbox para el header */
+ justify-content: space-between; /* Espacia el título a la izquierda y la navegación a la derecha */
+ align-items: center; /* Centra los elementos verticalmente */
+ box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Una sombra más pronunciada */
+ width: 100%; /* El header abarca todo el ancho de la página */
+ box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+header h1 {
+    font-family: "Bungee", sans-serif;
+ margin: 0; /* Aseguramos que no haya margen extra */
+ font-size: 2.5rem;
+ flex-shrink: 0; /* Evita que el título se encoja si hay poco espacio */
+}
+
+nav ul {
+    font-family: "Bungee", sans-serif;
+ list-style: none;
+ padding: 0;
+ margin: 0;
+ display: flex; /* Habilitamos Flexbox también para los elementos de la lista */
+ gap: 25px; /* Espacio entre los elementos de la lista */
+}
+
+nav ul li a {
+    font-family: "Bungee", sans-serif;
+ color: white;
+ text-decoration: none;
+ font-weight: bold;
+ font-size: 1.1rem; /* Un poco más grande para mejor legibilidad */
+ transition: color 0.3s ease; /* Transición suave al pasar el ratón */
+}
+
+nav ul li a:hover {
+ color: #D4EDDA; /* Un color más claro al pasar el ratón */
+ text-decoration: underline; /* Subrayado al pasar el ratón */
+}
+
+/* Estilo específico para que "Formulario" se vea diferente (opcional) */
+/* nav ul li:first-child a {
+ background-color: #388E3C;
+ padding: 0.5rem 1rem;
+ border-radius: 5px;
+} */
+
+
+
+
+
+
+
+
+.video-container {
+
+    position: relative; /* El contenedor es el punto de referencia */
+    width: 1516px; /* Asegúrate de que coincida con el ancho del video o el deseado */
+    height: 1000px; /* Asegúrate de que coincida con la altura del video o el deseado */
+    margin: 20px auto; /* Centra el contenedor (opcional) */
+    border-radius: 10px;
+  }
+  
+  .video-container video {
+    display: block; /* Evita espacios extra debajo del video */
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  
+  
+  .texto-encima {
+    position: absolute; /* Posicionamiento absoluto respecto al contenedor */
+    top: 0;       /* Cubre desde la parte superior */
+    left: 0;      /* Cubre desde la izquierda */
+    width: 100%;  /* Ocupa todo el ancho del video */
+    height: 100%; /* Ocupa toda la altura del video */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    color: white;
+    font-size: 1.5em;
+    z-index: 10; /* Asegura que el texto esté por encima del video */
+  
+    /* Centrar el texto dentro del fondo */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;    /* Centra verticalmente */
+    text-align: center;     /* Asegura que el texto en múltiples líneas también esté centrado */
+  }
+  
+
+
+
+
+#titulo1 {
+    font-family: "Bungee", sans-serif;
+    color: white; /* Color base blanco */
+    text-align: center;
+    font-size: 500%;
+    padding-top: 10%;
+    position: relative; /* Necesario para posicionar el pseudo-elemento */
+}
+
+/* Estilo para el texto con el efecto de contraste */
+#titulo1 .contrast-text {
+    color: rgb(255, 255, 255); /* Color de contraste verde */
+}
+
+/* Animación para el contraste de color */
+@keyframes color-contrast {
+    0% { color: rgb(255, 255, 255); }
+    50% { color: rgba(18, 68, 21, 0.534); }
+    100% { color: rgb(2, 114, 26); }
+}
+
+/* Aplicar la animación a cada letra con un pequeño retraso */
+#titulo1 span {
+    display: inline-block; /* Para que cada letra pueda animarse individualmente */
+    animation: color-contrast 1.5s infinite alternate; /* Animación principal */
+
+}
+
+/* Ajustar el retraso para crear un efecto de onda */
+#titulo1 span:nth-child(1) { animation-delay: 0.1s; }
+#titulo1 span:nth-child(2) { animation-delay: 0.2s; }
+#titulo1 span:nth-child(3) { animation-delay: 0.3s; }
+#titulo1 span:nth-child(4) { animation-delay: 0.4s; }
+#titulo1 span:nth-child(5) { animation-delay: 0.5s; }
+#titulo1 span:nth-child(6) { animation-delay: 0.6s; }
+#titulo1 span:nth-child(7) { animation-delay: 0.7s; }
+#titulo1 span:nth-child(8) { animation-delay: 0.8s; }
+#titulo1 span:nth-child(9) { animation-delay: 0.9s; }
+#titulo1 span:nth-child(10) { animation-delay: 1.0s; }
+#titulo1 span:nth-child(11) { animation-delay: 1.1s; }
+
+
+#titulo2{
+    font-family: "Outfit", sans-serif;
+  /* color: white;  Elimina o comenta esta línea */
+  color: transparent; /* Añade esta línea */
+  text-align: center;
+  font-size: 400%;
+  padding-top: 10%;
+  font-weight: bold; /* Opcional: para que el degradado se vea mejor */
+  background-image: linear-gradient(to right, #c2dab4, #6a966a, #15420c); /* Ejemplo de degradado */
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+
+
+
+#texto1{
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+
+    font-family: "Outfit", sans-serif;
+    color: white;
+
+}
+
+#caracteristicas{
+    font-family: "Bungee", sans-serif;
+    color: transparent; /* Añade esta línea */
+    text-align: center;
+    font-size: 400%;
+    font-weight: bold; /* Opcional: para que el degradado se vea mejor */
+    background-image: linear-gradient(to right, #c2dab4, #6a966a, #15420c); /* Ejemplo de degradado */
+    background-clip: text;
+    -webkit-background-clip: text;
+  
+    
+    
+
+}
+
+#caracteristicasdesc{
+    color: white;
+    font-family: "Outfit", sans-serif;
+    font-size: 200%;
+    padding-left: 18%;
+    padding-right: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.p1{ 
+    width: 900px; /* Ancho del cuadro */
+    padding: 20px; /* Espacio interno entre el texto y el borde */
+    border: 2px solid #015c1c62; /* Borde del cuadro (grosor, estilo, color) */
+    background-color: #1a770d52; /* Color de fondo del cuadro (opcional) */
+    border-radius: 10px;
+    
+}
+
+.p2{ 
+    width: 900px; /* Ancho del cuadro */
+    padding: 20px; /* Espacio interno entre el texto y el borde */
+    border: 2px solid #027a2662; /* Borde del cuadro (grosor, estilo, color) */
+    background-color: #14740873; /* Color de fondo del cuadro (opcional) */
+    border-radius: 10px;
+}
+
+.p3{ 
+    width: 900px; /* Ancho del cuadro */
+    padding: 20px; /* Espacio interno entre el texto y el borde */
+    border: 2px solid #018d2b62; /* Borde del cuadro (grosor, estilo, color) */
+    background-color: #1a8d0a81; /* Color de fondo del cuadro (opcional) */
+    border-radius: 10px;
+}
+
+.p4{ 
+    width: 900px; /* Ancho del cuadro */
+    padding: 20px; /* Espacio interno entre el texto y el borde */
+    border: 2px solid #015c1c62; /* Borde del cuadro (grosor, estilo, color) */
+    background-color: #1dbe0885; /* Color de fondo del cuadro (opcional) */
+    border-radius: 10px;
+}
+
+.p5{ 
+    width: 900px; /* Ancho del cuadro */
+    padding: 20px; /* Espacio interno entre el texto y el borde */
+    border: 2px solid #015c1c62; /* Borde del cuadro (grosor, estilo, color) */
+    background-color: #1ab806a8; /* Color de fondo del cuadro (opcional) */
+    border-radius: 10px;
+}
+
+.p6{ 
+    width: 900px; /* Ancho del cuadro */
+    padding: 20px; /* Espacio interno entre el texto y el borde */
+    border: 2px solid #015c1c62; /* Borde del cuadro (grosor, estilo, color) */
+    background-color: #19ce02b4; /* Color de fondo del cuadro (opcional) */
+    border-radius: 10px;
+}
+
+.p7{ 
+    width: 900px; /* Ancho del cuadro */
+    padding: 20px; /* Espacio interno entre el texto y el borde */
+    border: 2px solid #015c1c62; /* Borde del cuadro (grosor, estilo, color) */
+    background-color: #20cc09ce; /* Color de fondo del cuadro (opcional) */
+    border-radius: 10px;
+}
+
+#titulo3{
+    font-family: "Bungee", sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    
+}
+
+#titulo4 {
+    font-size: 2.5em; /* Reducimos un poco el tamaño para que quepa mejor dentro del cuadro */
+    text-align: center; /* Centramos el texto dentro del cuadro */
+    color: white;
+    font-family: "Outfit", sans-serif;
+    margin: 0; /* Eliminamos márgenes para controlar el espaciado con padding del cuadro */
+}
+
+
+
+#a1{
+  
+    margin-top: 2%;
+    text-align: center;
+    color: white;
+    font-family: "Bungee", sans-serif;
+    width: 100px; /* Ancho del cuadro */
+    padding: 20px; /* Espacio interno entre el texto y el borde */
+    border: 2px solid #015c1c62; /* Borde del cuadro (grosor, estilo, color) */
+    background-color: #0ad375ce; /* Color de fondo del cuadro (opcional) */
+    border-radius: 10px;
+    
+
+}
+
+#a2{
+    margin-top: 2%;
+  
+    text-align: center;
+    color: white;
+    font-family: "Bungee", sans-serif;
+    width: 150px; /* Ancho del cuadro */
+    padding: 20px; /* Espacio interno entre el texto y el borde */
+    border: 2px solid #015c1c62; /* Borde del cuadro (grosor, estilo, color) */
+    background-color: #09af6ace; /* Color de fondo del cuadro (opcional) */
+    border-radius: 10px;
+   
+
+}
+
+#a3{
+    margin-top: 2%;
+   
+    text-align: center;
+    color: white;
+    font-family: "Bungee", sans-serif;
+    width: 200px; /* Ancho del cuadro */
+    padding: 20px; /* Espacio interno entre el texto y el borde */
+    border: 2px solid #015c1c62; /* Borde del cuadro (grosor, estilo, color) */
+    background-color: #068b75ce; /* Color de fondo del cuadro (opcional) */
+    border-radius: 10px;
+ 
+
+}
+
+
+.cubos1 {
+    display: initial;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    width: 100%; /* Ocupa un poco más de ancho dentro del cuadro */
+    margin: 20px auto; /* Centra los cubos dentro del cuadro */
+}
+
+.cubos1 p {
+    font-size: 1.2em; /* Reducimos un poco el tamaño de la fuente de los cubos */
+    text-align: center;
+    color: white;
+    font-family: "Bungee", sans-serif;
+    padding: 15px; /* Reducimos el padding de los cubos */
+    border: 2px solid rgba(1, 92, 28, 0.6); /* Borde un poco más visible */
+    background-color: rgba(10, 211, 117, 0.7);
+    border-radius: 8px; /* Redondeo un poco más pequeño para los cubos */
+    margin: 0;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transiciones suaves */
+}
+
+
+
+#cuadro1 {
+    background-color: rgba(14, 161, 107, 0.6); /* Ligeramente más opaco */
+    border-radius: 15px; /* Redondeo un poco más suave */
+    margin-left: 5%;
+    margin-right: 5%; /* Para que no esté pegado al borde derecho en pantallas más grandes */
+    margin-top: 30px; /* Espacio superior */
+    margin-bottom: 30px; /* Espacio inferior */
+    padding: 30px; /* Añadimos un poco de padding interno */
+    border: 5px solid #ffffff; /* Borde blanco más delgado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Añadimos una sombra sutil */
+}
+
+
+.cubos1 p:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+
+
+#a1 { width: auto; padding: 15px 20px; } /* Ajustamos para que el ancho se ajuste al contenido */
+#a2 { width: auto; padding: 15px 25px; }
+#a3 { width: auto; padding: 15px 30px; }
+
+
+@keyframes slide-up-fade {
+    from {
+      opacity: 0;
+      transform: translateY(100px);  /* y: 100 */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  #titulo2 {
+    animation: slide-up-fade linear both;
+    animation-timeline: view();
+    animation-range: entry 60% exit -40%;
+  }
+  
+  @keyframes slide-x-fade {
+    from {
+      opacity: 0;
+      transform: translateX(var(--fromX));
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  #caracteristicasdesc p {
+    animation: slide-x-fade cubic-bezier(.42,0,.2,1) both;
+    animation-timeline: view();
+    animation-range: entry 80% exit -200%;
+    animation-duration: 1s;
+  }
+  
+  #caracteristicasdesc p:nth-child(odd)  { --fromX: -100%; }
+  #caracteristicasdesc p:nth-child(even) { --fromX:  100%; }
+
+  .cubos1 p {
+    /* ... otros estilos ... */
+    position: relative; /* Necesario para posicionar la información absolutamente dentro del cubo */
+    overflow: hidden; /* Oculta la información que pueda desbordarse inicialmente */
+    padding-bottom: 35px; /* Aumentamos el padding inferior para dejar espacio a la info */
+}
+
+.cubos1 p .info {
+    position: absolute;
+    bottom: -100%; /* Inicialmente oculto debajo del cubo */
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro para la información */
+    color: white;
+    font-size: 0.8em;
+    padding: 18px;
+    text-align: center;
+    border-radius: 0 0 8px 8px; /* Misma curvatura que el cubo */
+    opacity: 0; /* Inicialmente invisible */
+    transition: bottom 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Transición suave */
+}
+
+.cubos1 p:hover .info {
+    bottom: 0; /* Se despliega desde abajo al hacer hover */
+    opacity: 1; /* Se hace visible */
+}
+
+
+#imagenes1 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 30px 0; /* Añade un poco de espacio alrededor de las imágenes */
+}
+
+#imagen1,
+#imagen2,
+#imagen3 {
+    width: 500px; /* Ancho */
+    height: 300px; /* Altura */
+    border-radius: 10px;
+    box-shadow: 8px 4px 8px rgba(102, 134, 207, 0.589); /* Sombra suave inicial */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transición suave para la animación */
+}
+
+#imagen1:hover,
+#imagen2:hover,
+#imagen3:hover {
+    transform: scale(1.05); /* Ligeramente más grande al hacer hover */
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.951); /* Sombra más pronunciada al hacer hover */
+}
+
+
+
+
+
+
+#titulo5 {
+    font-size: 2.5em; /* Reducimos un poco el tamaño para que quepa mejor dentro del cuadro */
+    text-align: center; /* Centramos el texto dentro del cuadro */
+    color: white;
+    font-family: "Outfit", sans-serif;
+    margin: 0; /* Eliminamos márgenes para controlar el espaciado con padding del cuadro */
+}
+
+
+
+#a4{
+
+    margin-top: 2%;
+    text-align: center;
+    color: white;
+    font-family: "Bungee", sans-serif;
+    width: 100px; /* Ancho del cuadro */
+    padding: 20px; /* Espacio interno entre el texto y el borde */
+    border: 2px solid #015c1c62; /* Borde del cuadro (grosor, estilo, color) */
+    background-color: #0ad3c5ce; /* Color de fondo del cuadro (opcional) */
+    border-radius: 10px;
+
+
+}
+
+#a5{
+    margin-top: 2%;
+
+    text-align: center;
+    color: white;
+    font-family: "Bungee", sans-serif;
+    width: 150px; /* Ancho del cuadro */
+    padding: 20px; /* Espacio interno entre el texto y el borde */
+    border: 2px solid #015c1c62; /* Borde del cuadro (grosor, estilo, color) */
+    background-color: #0abcbcce; /* Color de fondo del cuadro (opcional) */
+    border-radius: 10px;
+
+
+}
+
+#a6{
+    margin-top: 2%;
+
+    text-align: center;
+    color: white;
+    font-family: "Bungee", sans-serif;
+    width: 200px; /* Ancho del cuadro */
+    padding: 20px; /* Espacio interno entre el texto y el borde */
+    border: 2px solid #015c1c62; /* Borde del cuadro (grosor, estilo, color) */
+    background-color: #07b3d5ce; /* Color de fondo del cuadro (opcional) */
+    border-radius: 10px;
+
+
+}
+
+
+.cubos2 {
+    display: initial;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    width: 100%; /* Ocupa un poco más de ancho dentro del cuadro */
+    margin: 20px auto; /* Centra los cubos dentro del cuadro */
+}
+
+.cubos2 p {
+    font-size: 1.2em; /* Reducimos un poco el tamaño de la fuente de los cubos */
+    text-align: center;
+    color: white;
+    font-family: "Bungee", sans-serif;
+    padding: 15px; /* Reducimos el padding de los cubos */
+    border: 2px solid rgba(1, 92, 28, 0.6); /* Borde un poco más visible */
+    background-color: rgba(12, 229, 218, 0.638);
+    border-radius: 8px; /* Redondeo un poco más pequeño para los cubos */
+    margin: 0;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transiciones suaves */
+    position: relative; /* Necesario para posicionar la información absolutamente dentro del cubo */
+    overflow: hidden; /* Oculta la información que pueda desbordarse inicialmente */
+    padding-bottom: 35px; /* Aumentamos el padding inferior para dejar espacio a la info */
+}
+
+
+
+#cuadro2 {
+    background-color: rgba(15, 234, 205, 0.493); /* Ligeramente más opaco */
+    border-radius: 15px; /* Redondeo un poco más suave */
+    margin-left: 5%;
+    margin-right: 5%; /* Para que no esté pegado al borde derecho en pantallas más grandes */
+    margin-top: 90px; /* Espacio superior */
+    margin-bottom: 30px; /* Espacio inferior */
+    padding: 30px; /* Añadimos un poco de padding interno */
+    border: 5px solid #ffffff; /* Borde blanco más delgado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Añadimos una sombra sutil */
+}
+
+
+.cubos2 p:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+
+
+#a4 { width: auto; padding: 15px 20px; } /* Ajustamos para que el ancho se ajuste al contenido */
+#a5 { width: auto; padding: 15px 25px; }
+#a6 { width: auto; padding: 15px 30px; }
+
+
+.cubos2 p .info2 {
+    position: absolute;
+    bottom: -100%; /* Inicialmente oculto debajo del cubo */
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro para la información */
+    color: white;
+    font-size: 0.8em;
+    padding: 18px;
+    text-align: center;
+    border-radius: 0 0 8px 8px; /* Misma curvatura que el cubo */
+    opacity: 0; /* Inicialmente invisible */
+    transition: bottom 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Transición suave */
+}
+
+.cubos2 p:hover .info2 {
+    bottom: 0; /* Se despliega desde abajo al hacer hover */
+    opacity: 1; /* Se hace visible */
+}
+
+#imagenes2{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+
+
+
+
+#titulo6 {
+    font-family: "Bungee", sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
+#titulo6 {
+    font-size: 2.5em;
+    text-align: center;
+    color: white;
+    font-family: "Outfit", sans-serif;
+    margin: 0;
+}
+
+.cubos3 {
+    display: initial;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.cubos3 p {
+    font-size: 1.2em;
+    text-align: center;
+    color: white;
+    font-family: "Bungee", sans-serif;
+    padding: 15px;
+    border: 2px solid rgba(1, 92, 28, 0.6);
+    background-color: rgba(30, 138, 220, 0.532);
+    border-radius: 8px;
+    margin: 0;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 35px;
+}
+
+.cubos3 p:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+.cubos3 p .info3 {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 0.8em;
+    padding: 18px;
+    text-align: center;
+    border-radius: 0 0 8px 8px;
+    opacity: 0;
+    transition: bottom 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.cubos3 p:hover .info3 {
+    bottom: 0;
+    opacity: 1;
+}
+
+#cuadro3 {
+    background-color: rgba(21, 169, 192, 0.6);
+    border-radius: 15px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 90px; /* Espacio superior */
+    margin-bottom: 30px;
+    padding: 30px;
+    border: 5px solid #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#a7 { 
+    width: auto;
+    padding: 15px 20px;
+    margin-top: 2%;
+    background-color: rgb(88, 207, 234);
+ }
+#a8 { 
+    width: auto;
+    padding: 15px 25px; 
+    margin-top: 2%;
+    background-color: rgb(54, 197, 230);
+
+ }
+
+
+
+
+
+
+
+
+#titulo7 {
+    font-size: 2.5em;
+    text-align: center;
+    color: white;
+    font-family: "Outfit", sans-serif;
+    margin: 0;
+}
+
+.cubos4 {
+    display: initial;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.cubos4 p {
+    font-size: 1.2em;
+    text-align: center;
+    color: white;
+    font-family: "Bungee", sans-serif;
+    padding: 15px;
+    border: 2px solid rgba(1, 92, 28, 0.6);
+    background-color: rgba(10, 211, 117, 0.7);
+    border-radius: 8px;
+    margin: 0;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 35px;
+}
+
+.cubos4 p:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+.cubos4 p .info4 {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 0.8em;
+    padding: 18px;
+    text-align: center;
+    border-radius: 0 0 8px 8px;
+    opacity: 0;
+    transition: bottom 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.cubos4 p:hover .info4 {
+    bottom: 0;
+    opacity: 1;
+}
+
+#cuadro4 {
+    background-color: rgba(14, 90, 161, 0.627);
+    border-radius: 15px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 90px; /* Espacio superior */
+    margin-bottom: 30px;
+    padding: 30px;
+    border: 5px solid #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#a9 { 
+    width: auto;
+    padding: 15px 20px;
+    margin-top: 2%;
+    background-color: rgb(12, 127, 221);
+ }
+
+
+
+
+
+
+#titulo8 {
+    font-size: 2.5em;
+    text-align: center;
+    color: white;
+    font-family: "Outfit", sans-serif;
+    margin: 0;
+}
+
+.cubos5 {
+    display: initial;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.cubos5 p {
+    font-size: 1.2em;
+    text-align: center;
+    color: white;
+    font-family: "Bungee", sans-serif;
+    padding: 15px;
+    border: 2px solid rgba(1, 92, 28, 0.6);
+    background-color: rgba(10, 211, 117, 0.7);
+    border-radius: 8px;
+    margin: 0;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 35px;
+}
+
+.cubos5 p:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+.cubos5 p .info5 {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 0.8em;
+    padding: 18px;
+    text-align: center;
+    border-radius: 0 0 8px 8px;
+    opacity: 0;
+    transition: bottom 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.cubos5 p:hover .info5 {
+    bottom: 0;
+    opacity: 1;
+}
+
+#cuadro5 {
+    background-color: rgba(14, 65, 161, 0.6);
+    border-radius: 15px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 90px; /* Espacio superior */
+    margin-bottom: 30px;
+    padding: 30px;
+    border: 5px solid #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#a10 { 
+    width: auto;
+    padding: 15px 20px;
+    margin-top: 2%;
+    background-color: rgb(41, 72, 213);
+ }
+#a11 { 
+    width: auto;
+    padding: 15px 25px; 
+    margin-top: 2%;
+    background-color: rgba(6, 26, 160, 0.6);
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+  
+    margin: 0;
+    background-color: #000;
+    color: #eee;
+    font-family: Poppins;
+    
+}
+
+.carousel .content{
+    font-size: 12px;
+}
+
+a{
+    text-decoration: none;
+}
+header{
+    width: 1140px;
+    max-width: 80%;
+    margin: auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+header a{
+    color: #eee;
+    margin-right: 40px;
+}
+/* carousel */
+.carousel{
+    height: 100vh;
+    margin-top: 50px;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+.carousel .list .item{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0 0 0 0;
+}
+.carousel .list .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: #000000a2;
+}
+.carousel .list .item .content{
+    position: absolute;
+    top: 20%;
+    width: 1140px;
+    max-width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-right: 30%;
+    box-sizing: border-box;
+    color: #fff;
+    text-shadow: 0 5px 10px #0004;
+}
+.carousel .list .item .author{
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+.carousel .list .item .title,
+.carousel .list .item .topic{
+    font-size: 5em;
+    font-weight: bold;
+    line-height: 1.3em;
+}
+.carousel .list .item .topic{
+    color: #d0ff00;
+}
+.carousel .list .item .buttons{
+    display: grid;
+    grid-template-columns: repeat(2, 130px);
+    grid-template-rows: 40px;
+    gap: 5px;
+    margin-top: 20px;
+}
+.carousel .list .item .buttons button{
+    border: none;
+    background-color: #eee;
+    letter-spacing: 3px;
+    font-family: Poppins;
+    font-weight: 500;
+}
+.carousel .list .item .buttons button:nth-child(2){
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #eee;
+}
+/* thumbail */
+.thumbnail{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    width: max-content;
+    z-index: 100;
+    display: flex;
+    gap: 20px;
+}
+.thumbnail .item{
+    width: 150px;
+    height: 220px;
+    flex-shrink: 0;
+    position: relative;
+}
+.thumbnail .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.thumbnail .item .content{
+    color: #fff;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+}
+.thumbnail .item .content .title{
+    font-weight: 500;
+}
+.thumbnail .item .content .description{
+    font-weight: 300;
+}
+/* arrows */
+.arrows{
+    position: absolute;
+    top: 80%;
+    right: 52%;
+    z-index: 100;
+    width: 300px;
+    max-width: 30%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.arrows button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(65, 223, 241, 0.334);
+    border: none;
+    color: #fff;
+    font-family: monospace;
+    font-weight: bold;
+    transition: .5s;
+}
+.arrows button:hover{
+    background-color: #2166e6;
+    color: #000;
+}
+
+/* animation */
+.carousel .list .item:nth-child(1){
+    z-index: 1;
+}
+
+/* animation text in first item */
+
+.carousel .list .item:nth-child(1) .content .author,
+.carousel .list .item:nth-child(1) .content .title,
+.carousel .list .item:nth-child(1) .content .topic,
+.carousel .list .item:nth-child(1) .content .des,
+.carousel .list .item:nth-child(1) .content .buttons
+{
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent .5s 1s linear 1 forwards;
+}
+@keyframes showContent{
+    to{
+        transform: translateY(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+.carousel .list .item:nth-child(1) .content .title{
+    animation-delay: 1.2s!important;
+}
+.carousel .list .item:nth-child(1) .content .topic{
+    animation-delay: 1.4s!important;
+}
+.carousel .list .item:nth-child(1) .content .des{
+    animation-delay: 1.6s!important;
+}
+.carousel .list .item:nth-child(1) .content .buttons{
+    animation-delay: 1.8s!important;
+}
+/* create animation when next click */
+.carousel.next .list .item:nth-child(1) img{
+    width: 150px;
+    height: 220px;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    border-radius: 30px;
+    animation: showImage .5s linear 1 forwards;
+}
+@keyframes showImage{
+    to{
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+}
+
+.carousel.next .thumbnail .item:nth-last-child(1){
+    overflow: hidden;
+    animation: showThumbnail .5s linear 1 forwards;
+}
+.carousel.prev .list .item img{
+    z-index: 100;
+}
+@keyframes showThumbnail{
+    from{
+        width: 0;
+        opacity: 0;
+    }
+}
+.carousel.next .thumbnail{
+    animation: effectNext .5s linear 1 forwards;
+}
+
+@keyframes effectNext{
+    from{
+        transform: translateX(150px);
+    }
+}
+
+/* running time */
+
+.carousel .time{
+    position: absolute;
+    z-index: 1000;
+    width: 0%;
+    height: 3px;
+    background-color: #0832a5e9;
+    left: 0;
+    top: 0;
+}
+
+.carousel.next .time,
+.carousel.prev .time{
+    animation: runningTime 3s linear 1 forwards;
+}
+@keyframes runningTime{
+    from{ width: 100%}
+    to{width: 0}
+}
+
+
+/* prev click */
+
+.carousel.prev .list .item:nth-child(2){
+    z-index: 2;
+}
+
+.carousel.prev .list .item:nth-child(2) img{
+    animation: outFrame 0.5s linear 1 forwards;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+@keyframes outFrame{
+    to{
+        width: 150px;
+        height: 220px;
+        bottom: 50px;
+        left: 50%;
+        border-radius: 20px;
+    }
+}
+
+.carousel.prev .thumbnail .item:nth-child(1){
+    overflow: hidden;
+    opacity: 0;
+    animation: showThumbnail .5s linear 1 forwards;
+}
+.carousel.next .arrows button,
+.carousel.prev .arrows button{
+    pointer-events: none;
+}
+.carousel.prev .list .item:nth-child(2) .content .author,
+.carousel.prev .list .item:nth-child(2) .content .title,
+.carousel.prev .list .item:nth-child(2) .content .topic,
+.carousel.prev .list .item:nth-child(2) .content .des,
+.carousel.prev .list .item:nth-child(2) .content .buttons
+{
+    animation: contentOut 1.5s linear 1 forwards!important;
+}
+
+@keyframes contentOut{
+    to{
+        transform: translateY(-150px);
+        filter: blur(20px);
+        opacity: 0;
+    }
+}
+@media screen and (max-width: 678px) {
+    .carousel .list .item .content{
+        padding-right: 0;
+    }
+    .carousel .list .item .content .title{
+        font-size: 30px;
+    }
+}
+
+
+
+#titulo9{
+    padding-top: 8%;
+    font-family: Poppins;
+    font-size: 100px;
+    text-align: center;
+
+}
+
+#logo{
+  
+    align-items: center;
+    height: 5%;
+    width: 100%;
+    background-color: white;
+    
+
+}
+
+#idt{
+    
+    height: 5%;
+    margin-left: 27%;
+    margin-right: 5%;
+    align-items: center;
+    padding: 2% ;
+}
+
+
+
+
+
+
+
+/*#instagram{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    border: 5px solid #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+}
+
+#insta{
+    padding-top: 8%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 20px;
+    padding-left: 2%;
+    
+
+}*/
+
+#instagram {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    border: 5px solid #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+#instagram:hover {
+    transform: scale(1.05);
+    filter: blur(0);
+}
+
+#instagram:not(:hover) {
+    filter: blur(3px); /* Asegura que se enfoque al quitar el hover */
+}
+
+#insta {
+    padding-top: 8%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 20px;
+    padding-left: 2%;
+}
